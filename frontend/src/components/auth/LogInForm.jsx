@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styles from  './LogInForm.module.css';
+import LogInButton from "./logInButton";
 function LogInForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -69,6 +70,8 @@ function LogInForm() {
                     {isSignUp ? 'Sign Up' : 'Log In'}
                 </button>
             </form>
+            <hr />
+            <LogInButton />
             <hr />
             <p className={styles.formP}>
                 {isSignUp ? 'Already have an account?' : 'Don\'t have an account?'}
