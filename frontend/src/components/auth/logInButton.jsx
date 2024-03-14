@@ -4,6 +4,7 @@ function LogInButton () {
     return(
         <div id='LogInGoogle'>
             <GoogleLogin 
+                size='10%'
                 state_cookie_domain='localhost:5173'
                 context='signup'
                 shape='pill'
